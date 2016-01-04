@@ -6,11 +6,17 @@ random_num = random.randint(1,10)
 while True:
     #get a number guess from player
     guess = int(input('Pick a number between 1 and 10...'))
+    #print hit or miss
+    #compare guess with random number
     if random_num == guess:
         print('You guessed correctly!')
         break
     else:
         print('Try again...')
 
-#compare guess to secret number
-#print hit or miss
+
+#limit the number of guesses
+#catch when someone submits a non integer
+#print "too low" or "too high" msgs for bad guesses
+#let ppl play again
+        
